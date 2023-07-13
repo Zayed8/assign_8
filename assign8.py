@@ -17,6 +17,8 @@ class B(A):
         print("Inside of Class B!")
         try:
             print("Value of A",self.__a)
+        except NameError:
+            print("Private Variable is getting asscced out of its class!")
         except Exception:
             print("Private variable invalid accessing Error Raised!!")
         print("Value of B",self._b)
